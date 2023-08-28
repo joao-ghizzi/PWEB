@@ -1,0 +1,69 @@
+/* geral */
+body{
+    margin: 0;
+    padding: 0 ;
+    font-family: 'Times New Roman', Times, serif;
+}
+#forms{
+    margin: 30px, auto;
+    padding: 20px;
+    background-color: #00ffc8;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+}
+
+input[type="text"],
+input[type="email"]
+
+textarea{
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+/* opcao */
+input[type="radio"],
+input[type="checkbox"]
+{
+    margin-right: 5px;
+}
+/* botao */
+input[type="submit"],
+button[type="reset"],
+button[type="button"]{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: black;
+    cursor: pointer;
+    margin-right: 10px;
+   
+}
+/* botao canelar */
+
+
+/* campo seleção */
+select{
+    padding: 10px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 75%;
+    margin-bottom: 10px;
+    background-image: linear-gradient(to button #FFFFFF, blue);
+
+}
+/* quando selecionarcampos de seleção */
+select:focus{
+    outline: 2px solid red;
+    border-color: #00ffc8;
+}
