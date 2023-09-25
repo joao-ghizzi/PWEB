@@ -13,11 +13,11 @@ function jogar(escolhaDoJogador) {
             break;
 
         case('papel'):
-            result = escoComp === 'papel' ? "Você venceu!!!!" : "Você perdeu :("
+            result = escoComp === 'pedra' ? "Você venceu!!!!" : "Você perdeu :("
             break;
 
         case('tesoura'):
-            result = escoComp === 'pedra' ? "Você venceu!!!!" : "Você perdeu :("
+            result = escoComp === 'papel' ? "Você venceu!!!!" : "Você perdeu :("
             break;
         }
     }
