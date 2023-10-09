@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa sobre Filme</title>
+</head>
+<body>
+
+<h2>Informe seus dados:</h2>
+
+<form id="filmSurvey">
+    Idade: <input type="number" id="idade" required><br><br>
+    Sexo: 
+    <input type="radio" id="homem" name="sexo" value="homem" required>
+    <label for="homem">Homem</label>
+    <input type="radio" id="mulher" name="sexo" value="mulher" required>
+    <label for="mulher">Mulher</label><br><br>
+    Opinião:
+    <select id="opiniao" required>
+        <option value="4">Ótimo</option>
+        <option value="3">Bom</option>
+        <option value="2">Regular</option>
+        <option value="1">Péssimo</option>
+    </select><br><br>
+    <input type="button" value="Enviar" onclick="collectData()">
+</form>
+
+<h2>Resultados da Pesquisa:</h2>
+
+<div>
+    Média da idade das pessoas: <span id="mediaIdade">-</span>
+</div>
+<div>
+    Idade da pessoa mais velha: <span id="maisVelha">-</span>
+</div>
+<div>
+    Idade da pessoa mais nova: <span id="maisNova">-</span>
+</div>
+<div>
+    Quantidade que responderam péssimo: <span id="responderamPessimo">-</span>
+</div>
+<div>
+    Porcentagem de ótimo e bom: <span id="porcentagemOtimoBom">-</span>%
+</div>
+<div>
+    Homens: <span id="qtdHomens">-</span>
+    Mulheres: <span id="qtdMulheres">-</span>
+</div>
+
+<script src="pesquisa.js"></script>
+</body>
+</html>
