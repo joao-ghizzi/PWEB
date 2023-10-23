@@ -9,13 +9,13 @@
 </head>
 
 <body>
-    <form>
+    <form id="myForm" onsubmit="return result();">
         <label for="texto">Digite seu texto:</label><br>
         <input type="text" id="texto" name="texto"><br><br>
         <label for="maiusculas">Maiúsculas</label>
         <input type="checkbox" id="maiusculas" name="maiusculas" value="maiusculas"><br><br>
         <input type="submit" value="Enviar">
-        <p id="result"></p>
+        <p>a frase maiuscula é: </p> <span id='result'>-</span>
     </form>
 
 
